@@ -21,8 +21,9 @@ tests via Rake.
 
 #### Bundler
 
-Using Bundler ass the Gemfile:
+Using Bundler add to your the Gemfile:
 
+    gem 'rubytest'
     gem 'rubytest-rake'
 
 Then on the command line: 
