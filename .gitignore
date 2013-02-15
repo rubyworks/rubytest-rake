@@ -1,0 +1,10 @@
+.fire/digest
+.yardoc
+doc/
+log/
+pkg/
+tmp/
+web/
+/QED.md
+/Gemfile.lock
+

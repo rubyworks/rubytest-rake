@@ -1,0 +1,10 @@
+--title Rake for Ruby Test
+--output-dir doc
+--readme README.md
+--private
+--protected
+lib
+-
+*.md
+*.txt
+

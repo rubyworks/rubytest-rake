@@ -1,0 +1,55 @@
+---
+revision: 2013
+type: ruby
+sources:
+- var
+authors:
+- name: trans
+  email: transfire@gmail.com
+organizations: []
+requirements:
+- name: rake
+- groups:
+  - build
+  development: true
+  name: fire
+- groups:
+  - build
+  development: true
+  name: detroit
+conflicts: []
+alternatives: []
+resources:
+- type: home
+  uri: http://rubyworks.github.com/rubytest-rake
+  label: Homepage
+- type: code
+  uri: http://github.com/rubyworks/rubytest-rake
+  label: Source Code
+- type: bugs
+  uri: http://github.com/rubyworks/rubytest-rake/issues
+  label: Issue Tracker
+- type: mail
+  uri: http://groups.google.com/group/rubyworks-mailinglist
+  label: Mailing List
+repositories:
+- name: upstream
+  scm: git
+  uri: git@github.com:rubyworks/rubytest-rake.git
+categories: []
+copyrights:
+- holder: RubyWorks
+  year: '2011'
+  license: BSD-2-Clause
+customs: []
+paths:
+  lib:
+  - lib
+created: '2011-07-23'
+summary: Rake Plugin for Ruby Test
+title: Rake for Ruby Test
+version: 0.1.0
+name: rubytest-rake
+description: Rake plugin for Ruby Test. Ruby Test is a universal test harness for
+  Ruby.
+date: '2013-02-14'
