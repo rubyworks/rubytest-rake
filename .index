@@ -52,4 +52,4 @@ version: 0.1.0
 name: rubytest-rake
 description: Rake plugin for Ruby Test. Ruby Test is a universal test harness for
   Ruby.
-date: '2013-02-14'
+date: '2013-02-18'
