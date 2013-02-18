@@ -9,8 +9,14 @@
 [![Gem Version](https://badge.fury.io/rb/rubytest-rake.png)](http://badge.fury.io/rb/rubytest-rake)
 
 
-This gem provides a plugin for running Ruby Test based test framework
+This gem provides a plug-in for running Ruby Test based test framework
 tests via Rake.
+
+Note that this implmentation does not shell-out, so tests are run from the 
+same process as Rake. While it probably makes no difference, if you need a
+more prestine test environment in which Rake is not present, then use
+a different approach to running tests, such as writing a custom runner
+and shelling out to it.
 
 
 ## Installation
@@ -21,7 +27,7 @@ tests via Rake.
 
 #### Bundler
 
-Using Bundler add to your the Gemfile:
+Using Bundler add to your Gemfile:
 
     gem 'rubytest'
     gem 'rubytest-rake'
@@ -38,7 +44,8 @@ In your Rakefile add:
     require 'rubytest-rake'
 
     Test::Rake::TestTask.new do |run|
-      run.tests << 'test/test_*.rb'
+      run.load_path 'lib'
+      run.test_files << 'test/test_*.rb'
     end
 
 The Rake task constructor supports the same interface as `Test.configure`.

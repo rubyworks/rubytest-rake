@@ -74,26 +74,30 @@ module Test
         end
       end
 
-      # Run test via command line shell.
+      # Run test via shell. (Not Currently Used)
+      #
+      # Note, the problem with this approach is that before and after 
+      # procedures cannot be passed along. In it's current form it
+      # also requires that `rubytest-cli` be installed.
       #
       # @return nothing
       def shell_run
-        success = ruby(*config.to_shellwords)
+        success = ruby('rubytest', *config.to_shellwords)
         exit -1 unless success
       end
 
-      # Resolve test globs.
-      #
-      # @todo Implementation probably cna be simplified.
-      # @return [Array<String>] List of test files.
-      def test_files
-        files = tests
-        files = files.map{ |f| Dir[f] }.flatten
-        files = files.map{ |f| File.directory?(f) ? Dir[File.join(f, '**/*.rb')] : f }
-        files = files.flatten.uniq
-        files = files.map{ |f| File.expand_path(f) }
-        files
-      end
+      ## Resolve test globs.
+      ##
+      ## @todo Implementation probably can be simplified.
+      ## @return [Array<String>] List of test files.
+      #def test_files
+      #  files = tests
+      #  files = files.map{ |f| Dir[f] }.flatten
+      #  files = files.map{ |f| File.directory?(f) ? Dir[File.join(f, '**/*.rb')] : f }
+      #  files = files.flatten.uniq
+      #  files = files.map{ |f| File.expand_path(f) }
+      #  files
+      #end
 
       # Default test globs. For extra convenience will look for list in
       # `ENV['TEST']` first.
@@ -106,29 +110,6 @@ module Test
           DEFAULT_TESTS
         end
       end
-
-=begin
-      # Shell out to current ruby command.
-      #
-      # @return [Boolean] Success of shell call.
-      def ruby(*argv)
-        system(ruby_command, *argv)
-      end
-
-      # Get current ruby shell command.
-      #
-      # @return [String] Ruby shell command.
-      def ruby_command
-        @ruby_command ||= (
-          require 'rbconfig'
-          ENV['RUBY'] ||
-            File.join(
-              RbConfig::CONFIG['bindir'],
-              RbConfig::CONFIG['ruby_install_name'] + RbConfig::CONFIG['EXEEXT']
-            ).sub(/.*\s.*/m, '"\&"')
-        )
-      end
-=end
 
     end
 
