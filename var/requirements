@@ -1,5 +1,7 @@
 ---
 - rake
-- fire    (build)
+- rubytest 0.7.0+
+- ergo    (build)
 - detroit (build)
+- qed     (test)
 

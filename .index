@@ -9,14 +9,20 @@ authors:
 organizations: []
 requirements:
 - name: rake
+- version: 0.7.0+
+  name: rubytest
 - groups:
   - build
   development: true
-  name: fire
+  name: ergo
 - groups:
   - build
   development: true
   name: detroit
+- groups:
+  - test
+  development: true
+  name: qed
 conflicts: []
 alternatives: []
 resources:
