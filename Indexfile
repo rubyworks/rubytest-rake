@@ -1,0 +1,33 @@
+---
+name:
+  rubytest-rake
+
+version: 
+  0.1.0
+
+title:
+  Rake task for Rubytest
+
+summary:
+  Rake plugin for Ruby Universal Test Harness
+
+description:
+  Rake plugin for Ruby Test. Ruby Test is a universal test harness for Ruby.
+
+resources:
+  home: http://rubyworks.github.com/rubytest-rake
+  code: http://github.com/rubyworks/rubytest-rake
+  bugs: http://github.com/rubyworks/rubytest-rake/issues
+  mail: http://groups.google.com/group/rubyworks-mailinglist
+
+repositories:
+  upstream: git@github.com:rubyworks/rubytest-rake.git
+
+authors:
+  - trans <transfire@gmail.com>
+
+created: 2011-07-23
+
+copyrights:
+  - 2011 RubyWorks (BSD-2-Clause)
+

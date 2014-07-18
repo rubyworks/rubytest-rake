@@ -2,27 +2,17 @@
 revision: 2013
 type: ruby
 sources:
-- var
+- Indexfile
+- Gemfile
 authors:
 - name: trans
   email: transfire@gmail.com
 organizations: []
 requirements:
-- name: rake
-- version: 0.7.0+
+- version: '>= 0'
+  name: rake
+- version: '> 0.8.0'
   name: rubytest
-- groups:
-  - build
-  development: true
-  name: ergo
-- groups:
-  - build
-  development: true
-  name: detroit
-- groups:
-  - test
-  development: true
-  name: qed
 conflicts: []
 alternatives: []
 resources:
@@ -51,11 +41,11 @@ customs: []
 paths:
   lib:
   - lib
-created: '2011-07-23'
-summary: Rake Plugin for Ruby Test
-title: Rake for Ruby Test
-version: 0.1.0
 name: rubytest-rake
+title: Rake task for Rubytest
+version: 0.1.0
+summary: Rake plugin for Ruby Universal Test Harness
 description: Rake plugin for Ruby Test. Ruby Test is a universal test harness for
   Ruby.
-date: '2013-02-18'
+created: '2011-07-23'
+date: '2014-07-18'
