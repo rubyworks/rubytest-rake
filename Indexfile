@@ -3,7 +3,7 @@ name:
   rubytest-rake
 
 version: 
-  0.1.0
+  0.2.0
 
 title:
   Rake task for Rubytest
@@ -29,5 +29,5 @@ authors:
 created: 2011-07-23
 
 copyrights:
-  - 2011 RubyWorks (BSD-2-Clause)
+  - 2011 Rubyworks (BSD-2-Clause)
 

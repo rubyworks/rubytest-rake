@@ -34,7 +34,7 @@ repositories:
   uri: git@github.com:rubyworks/rubytest-rake.git
 categories: []
 copyrights:
-- holder: RubyWorks
+- holder: Rubyworks
   year: '2011'
   license: BSD-2-Clause
 customs: []
@@ -43,7 +43,7 @@ paths:
   - lib
 name: rubytest-rake
 title: Rake task for Rubytest
-version: 0.1.0
+version: 0.2.0
 summary: Rake plugin for Ruby Universal Test Harness
 description: Rake plugin for Ruby Test. Ruby Test is a universal test harness for
   Ruby.
