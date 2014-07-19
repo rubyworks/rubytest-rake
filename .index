@@ -11,7 +11,7 @@ organizations: []
 requirements:
 - version: '>= 0'
   name: rake
-- version: '> 0.8.0'
+- version: '>= 0.8.0'
   name: rubytest
 conflicts: []
 alternatives: []
